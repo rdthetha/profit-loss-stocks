@@ -35,9 +35,10 @@ button{
     font-weight: bold;
     border-radius: 1rem;
     border-color: azure;
+
 }
 button:hover{
-    background-color: aliceblue;
+    background: linear-gradient(-60deg, red 50%, green 50%);
     cursor: pointer;
 }
 
