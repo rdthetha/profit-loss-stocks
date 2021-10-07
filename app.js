@@ -6,10 +6,10 @@ const submitBtn = document.querySelector("#output-btn");
 
 submitBtn.addEventListener('click', function OutputHandler() {
     
-    if (initial.value =="" || quantity.value == "" || final.value == "") {
+    if (initial.value =="" || quantity.value == "" || final.value == "0"||initial.value =="0" || quantity.value == "0" || final.value == "0") {
         console.log(initial.value);
         output.style.color = "orange";
-        output.innerHTML = "Warning:Value cannot be empty";
+        output.innerHTML = "Warning:Value cannot be empty or Zero";
     } else {
         output.style.display = "none";
         var initialPrice = Number(initial.value);
